@@ -64,19 +64,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
 header {
     height: 100vh;
     position: relative;
-    background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(file:///run/user/1000/doc/c0d8f6ad/24770152_101.jpg);
+    background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(/home/evgen/Documents/my_website/images/background.jpg);
     background-size: cover;
     background-position: center;
     color: white;
