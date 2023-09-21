@@ -63,11 +63,120 @@
 }
 
 
+/*
+/* Стили для контейнера .icon 
+.icon {
+    display: flex;
+    gap: 10px;
+  }
 
-header {
-    height: 100vh;
+  .sm-icon {
+    text-decoration: none;
+    color: #333; 
+  }
+  
+  ion-icon {
+    font-size: 24px;
+    vertical-align: middle;
+  }
+  */
+  
+  
+  
+  
+  
+  .cta {
+    border: none;
+    background: none;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
     position: relative;
-    background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(/home/evgen/Documents/my_website/images/background.jpg);
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+
+
+/* icon */
+.social-media {
+    position: relative;
+    padding-top: 10px;
+    z-index: 1;
+    float: right;
+    top: 10px;
+    box-shadow: 10px 5px 10px #000000;
+    /* right: 20px; */
+}
+
+.social-media a {
+    display: inline-block; /* Это делает элементы <a> блочными, но горизонтально */
+    margin-right: 10px; /* Опциональные отступы между иконками */
+}
+
+.social-media a img.icon-top {
+    margin-top: 200px;
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  /* buttons */
+.cta-buttons {
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    
+}
+  
+  
+header {
+    height: 1px;
+    position: relative;
+    background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(/home/evgen/Documents/my_website/images/header_back.png);
     background-size: cover;
     background-position: center;
     color: white;
@@ -130,3 +239,18 @@ p {
 .header-container-inner {
     width: 50%;
 }
+
+.main{
+    background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(/home/evgen/Documents/my_website/images/background.png);
+
+
+
+}
+
+.me_photo {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  }
