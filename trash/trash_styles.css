@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.parent-link {
+    font-size: 1rem;
+}
+
+.parent-link, .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 42px;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links, .msg {
+    text-decoration: none;
+}
+
+.social-links {
+    padding: 0 2.5rem;
+    margin: 0;
+    color: white;
+    font-weight: 500;
+}
+
+.social-links:hover {
+    opacity: 0.8;
+}
+
+.sm-icon {
+    padding: 0 0.5rem;
+    margin: 0;
+    color: white;
+}
+
+.sm-icon:hover {
+    opacity: 0.8;
+}
+
+
+/*
+/* Стили для контейнера .icon 
+.icon {
+    display: flex;
+    gap: 10px;
+  }
+
+  .sm-icon {
+    text-decoration: none;
+    color: #333; 
+  }
+  
+  ion-icon {
+    font-size: 24px;
+    vertical-align: middle;
+  }
+  */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .cta {
+    border: none;
+    background: none;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+
+
+/* icon */
+.social-media {
+    position: relative;
+    padding-top: 10px;
+    z-index: 1;
+    float: right;
+    top: 10px;
+    box-shadow: 10px 5px 10px #000000;
+    /* right: 20px; */
+}
+
+.social-media a {
+    display: inline-block; /* Это делает элементы <a> блочными, но горизонтально */
+    margin-right: 10px; /* Опциональные отступы между иконками */
+}
+
+.social-media a img.icon-top {
+    margin-top: 200px;
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  /* buttons */
+.cta-buttons {
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    
+}
+
+/* Стили для кнопки "Home" */
+.home_button {
+  position:absolute;
+  left: 100px; /* Добавьте нужное значение отступа справа */
+}
+
+  
+  
+header {
+    height: 1px;
+    position: relative; 
+    background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(/home/evgen/Documents/my_website/images/header_back.png);
+    background-size: cover; 
+    background-position: center; 
+    color: white;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 32px;
+    line-height: 1.05;
+}
+
+h2 {
+    font-size: 44px;
+    margin-bottom: 48px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 48px;
+}
+
+.btn:link, .btn:visited {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(199, o, 0);
+    color: #EAF8FF;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 25px;
+}
+
+.btn:link:hover,
+.btn:visited:hover{
+    opacity: 0.8;
+}
+
+.header-container {
+    width: 1200px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 3rem;
+    margin-top: 2.5rem;
+}
+
+.header-container-inner {
+    width: 50%;
+}
+
+
+
+.me_photo {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  
+  /* ------------------------------------home_button ----------------------*/
+.home_button {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.home_button::before {
+    margin-left: auto;
+    margin-top: 200px;
+    position:absolute;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+.home_button::after, home_button::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000000;
+    display: block;
+    transition: 0.5s;
+  }
+  
+.home_button:hover::after, home_button:hover::before {
+    width: 100%;
+  }
+  
+/* ---------------------------------------------- ----------------------*/
